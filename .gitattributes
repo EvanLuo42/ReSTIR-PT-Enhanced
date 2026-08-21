@@ -1,0 +1,39 @@
+# Normalize text to LF in the repo and working tree, regardless of core.autocrlf.
+* text=auto eol=lf
+
+# Windows scripts need CRLF so cmd.exe can run them.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Visual Studio project files.
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+
+# Format slang files as HLSL.
+*.slang gitlab-language=hlsl
+*.slangh gitlab-language=hlsl
+
+# Binary assets — never apply EOL conversion.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.dds binary
+*.exr binary
+*.tga binary
+*.bmp binary
+*.ttf binary
+*.otf binary
+*.bin binary
+*.fbx binary
+*.pdf binary
+*.mp4 binary
+*.zip binary
+*.7z binary
+*.dll binary
+*.lib binary
+*.pdb binary
+*.exe binary
